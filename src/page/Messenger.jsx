@@ -25,7 +25,7 @@ function Messenger() {
   }, [location]);
 
   useEffect(() => {
-    socket = io("ws://still-falls-18802.herokuapp.com");
+    socket = io("https://still-falls-18802.herokuapp.com");
     socket.emit("userData", user._id);
   }, [user]);
 
